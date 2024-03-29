@@ -1,0 +1,11 @@
+User-Agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /checkout/
+Disallow: /customers-dashboard/
+Disallow: /cart/
+Disallow: /order-tracking/
+Disallow: /my-order-tracking/
+Disallow: /*globals.css
+
+Sitemap: https://janani-computer.vercel.app/sitemap.xml

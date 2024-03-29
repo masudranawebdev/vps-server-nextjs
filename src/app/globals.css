@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: #f2f4f8;
+}
+
+@layer base {
+  h1 {
+    @apply text-[40px] mb-[0.5rem] mt-0;
+  }
+  h2 {
+    @apply text-[32px] mb-[0.5rem] mt-0;
+  }
+  h3 {
+    @apply text-[28px] mb-[0.5rem] mt-0;
+  }
+  h4 {
+    @apply text-[24px] mb-[0.5rem] mt-0;
+  }
+  h5 {
+    @apply text-[20px] mb-[0.5rem] mt-0;
+  }
+  h6 {
+    @apply text-[16px] mb-[0.5rem] mt-0;
+  }
+  ul {
+    @apply list-disc list-inside;
+  }
+  li {
+    @apply mb-[5px];
+  }
+}
+
+@layer components {
+  html {
+    @apply scroll-smooth;
+  }
+
+  /* .container {
+    @apply max-w-full 2xl:max-w-[1560px] mx-auto px-2 sm:px-3 md:px-4 lg:px-5 xl:px-6 2xl:px-0;
+  } */
+
+  .form-radio,
+  .form-checkbox {
+    @apply h-5 w-5 cursor-pointer rounded border-2 border-white-light bg-transparent text-primary !shadow-none !outline-none !ring-0 !ring-offset-0 checked:bg-[length:90%_90%] disabled:cursor-not-allowed disabled:bg-[#eee] ltr:mr-1.5 rtl:ml-1.5;
+  }
+
+  .form-input,
+  .form-textarea,
+  .form-select,
+  .form-multiselect {
+    @apply w-full rounded-md border border-white-light bg-white px-4 py-2 text-sm font-normal text-black !outline-none focus:border-primary focus:ring-transparent;
+  }
+}
+.wishlist {
+  background-color: #f27f21;
+}
+
+.react-slider {
+  height: 10px;
+}
+
+/* Styles for the track of the slider */
+.track {
+  background-color: #000f24; /* Light gray */
+  height: 10px;
+  margin: 0 2.5px;
+}
+
+/* Styles for the thumb of the slider */
+.thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f27f21; /* Primary color */
+  border: 2px solid #ebeef3; /* Dark gray border */
+  cursor: grab;
+  margin-top: -5px;
+}
+
+/* Styles for the active state of the thumb */
+.thumb:active {
+  cursor: grabbing;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
